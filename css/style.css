@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+
+}
+
+#container {
+    text-align: center;
+    width: 100%;
+}
+
+#inner {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    width: 662px;
+    transition: all 1s;
+
+
+    
+}
+
+img {
+    border: solid white 2px ;
+    
+}
+
+#lake {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    height: 380px;
+    width: 662px;
+    transition: all 1s;
+    opacity: 0;
+    transition: all 1s;
+    
+    
+}
+
+#lakeview {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    margin: auto;
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+    width: 665px;
+
+
+
+}
+
+#lake:hover {
+    opacity: 1;
+}
+
+#inner:hover {
+    border: solid black 2px;
+    
+}
+
+#inner::before {
+    position: absolute;
+    top: 0;
+    bottom : 0;
+}
+
+#inner::after {
+    position: absolute;
+    top:50%;
+    bottom:50%;
+}
+
+
+
+
+
